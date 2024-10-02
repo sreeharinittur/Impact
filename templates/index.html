@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Candidate Screening</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>IMPACT-AI Candidate Screening System</h1>
+    
+    <form action="/evaluate" method="POST">
+        <!-- Question 1 -->
+        <h2>Question 1: Explain how backpropagation works in a neural network.</h2>
+        <label>Candidate 1 Response:</label><br>
+        <textarea name="candidate1_q1" rows="4" cols="50"></textarea><br><br>
+
+        <label>Candidate 2 Response:</label><br>
+        <textarea name="candidate2_q1" rows="4" cols="50"></textarea><br><br>
+
+        <label>Candidate 3 Response:</label><br>
+        <textarea name="candidate3_q1" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Question 2 -->
+        <h2>Question 2: How would you handle an imbalanced dataset?</h2>
+        <label>Candidate 1 Response:</label><br>
+        <textarea name="candidate1_q2" rows="4" cols="50"></textarea><br><br>
+
+        <label>Candidate 2 Response:</label><br>
+        <textarea name="candidate2_q2" rows="4" cols="50"></textarea><br><br>
+
+        <label>Candidate 3 Response:</label><br>
+        <textarea name="candidate3_q2" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Question 3 -->
+        <h2>Question 3: What techniques would you use to prevent overfitting in a machine learning model?</h2>
+        <label>Candidate 1 Response:</label><br>
+        <textarea name="candidate1_q3" rows="4" cols="50"></textarea><br><br>
+
+        <label>Candidate 2 Response:</label><br>
+        <textarea name="candidate2_q3" rows="4" cols="50"></textarea><br><br>
+
+        <label>Candidate 3 Response:</label><br>
+        <textarea name="candidate3_q3" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Evaluate">
+    </form>
+</body>
+</html>

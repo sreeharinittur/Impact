@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluation Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Evaluation Results</h1>
+
+    <table border="1">
+        <tr>
+            <th>Candidate</th>
+            <th>Responses</th>
+            <th>Score</th>
+        </tr>
+        {% for candidate, responses, score in results %}
+        <tr>
+            <td>{{ candidate }}</td>
+            <td>
+                <strong>Question 1:</strong> {{ responses[0] }}<br>
+                <strong>Question 2:</strong> {{ responses[1] }}<br>
+                <strong>Question 3:</strong> {{ responses[2] }}
+            </td>
+            <td>{{ score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
